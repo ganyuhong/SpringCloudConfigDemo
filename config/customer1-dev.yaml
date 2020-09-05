@@ -1,20 +1,20 @@
-spring:
-  cloud:
-    stream:
-      bindings:
-        input:
-          destination: default.messages
-          binder: local_rabbit
-        output:
-          destination: default.messages
-          binder: local_rabbit
-      binders:
-        local_rabbit:
-          type: rabbit
-          environment:
-            spring:
-              rabbitmq:
-                host: localhost
-                port: 15672
-                username: guest
-                password: guest
+#spring:
+#  cloud:
+#    stream:
+#      bindings:
+#        input:
+#          destination: default.messages
+#          binder: local_rabbit
+#        output:
+#          destination: default.messages
+#          binder: local_rabbit
+#      binders:
+#        local_rabbit:
+#          type: rabbit
+#          environment:
+#            spring:
+#              rabbitmq:
+#                host: localhost
+#                port: 15672
+#                username: guest
+#                password: guest
